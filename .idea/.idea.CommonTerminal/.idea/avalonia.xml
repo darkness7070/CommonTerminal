@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="CommonTerminal/App.axaml" value="CommonTerminal/CommonTerminal.csproj" />
+        <entry key="CommonTerminal/Views/AppWindow.axaml" value="CommonTerminal/CommonTerminal.csproj" />
+        <entry key="CommonTerminal/Views/DataWindow.axaml" value="CommonTerminal/CommonTerminal.csproj" />
+        <entry key="CommonTerminal/Views/MainWindow.axaml" value="CommonTerminal/CommonTerminal.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

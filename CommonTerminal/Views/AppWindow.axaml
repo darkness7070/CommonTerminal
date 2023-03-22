@@ -1,0 +1,28 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="CommonTerminal.Views.AppWindow"
+        Title="AppWindow">
+        <Grid ShowGridLines="True" RowDefinitions="10*,90*" ColumnDefinitions="5*,90*,5*">
+                <TextBlock Name="boxName" Text="Заявка #" Grid.Column="1" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                <Grid Grid.Row="1" Grid.Column="1" RowDefinitions="*,*" Margin="0,12">
+                        <Grid Grid.Column="1" RowDefinitions="*,*,*,*,*,*" ColumnDefinitions="20*,80*" ShowGridLines="True">
+                                <TextBlock VerticalAlignment="Center" Margin="6" Text="Срок заявки:"/>
+                                <TextBlock VerticalAlignment="Center" Margin="6" Grid.Row="1" Text="Паспорт:"/>
+                                <TextBlock VerticalAlignment="Center" Margin="6" Grid.Row="2" Text="Цель посещения:"/>
+                                <TextBlock VerticalAlignment="Center" Margin="6" Grid.Row="3" Text="Подразделение:"/>
+                                <TextBlock VerticalAlignment="Center" Margin="6" Grid.Row="4" Text="ФИО:"/>
+                                <TextBlock Grid.Column="1" VerticalAlignment="Center" Margin="6" Name="boxValidaty"/>
+                                <TextBlock Grid.Column="1" VerticalAlignment="Center" Margin="6" Grid.Row="1" Name="boxPassport"/>
+                                <TextBlock Grid.Column="1" VerticalAlignment="Center" Margin="6" Grid.Row="2" Name="boxPurpose"/>
+                                <TextBlock Grid.Column="1" VerticalAlignment="Center" Margin="6" Grid.Row="3" Name="boxSubdivision"/>
+                                <TextBlock Grid.Column="1" VerticalAlignment="Center" Margin="6" Grid.Row="4" Name="boxWorker"/>
+                        </Grid>
+                        <DataGrid IsReadOnly="True" AutoGenerateColumns="True" Grid.Row="1" Name="dataGrid">
+                                
+                        </DataGrid>
+                </Grid>
+        </Grid>
+</Window>

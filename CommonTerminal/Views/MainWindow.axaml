@@ -1,0 +1,22 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:CommonTerminal.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="200"
+        x:Class="CommonTerminal.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="CommonTerminal">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+    
+    <Grid RowDefinitions="10*,80*,10*" ColumnDefinitions="10*,80*,10*" ShowGridLines="True">
+        <StackPanel VerticalAlignment="Center" Grid.Row="1" Grid.Column="1" >
+            <TextBox Width="250" Name="boxCode" VerticalAlignment="Center" HorizontalAlignment="Stretch" Watermark="Введите код авторизации" Margin="6" TextAlignment="Center"/>
+            <Button  Click="btn_Login" HorizontalAlignment="Center" Content="Войти" Padding="24,6" HorizontalContentAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+
+</Window>
